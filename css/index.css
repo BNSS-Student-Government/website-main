@@ -1,0 +1,159 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    display: block;
+    background: rgba(0, 0, 0, .6);
+}
+#sidenav-button {
+    outline: none;
+}
+#sidenav-button:hover {
+    color: #73001D;
+    background-color: #fec810;
+}
+#big {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+#home-container {
+    height: 100%;
+    margin: auto;
+    padding: 0.75rem;
+}
+#elections-menu {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.95rem;
+    background-color: #0d0f10;
+    letter-spacing: 0.0625em;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    min-width: auto;
+}
+#elections-menu .dropdown-item {
+    color: #fff;
+    background-color: #0d0f10;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.3rem 1.5rem;
+}
+#elections-menu .dropdown-item:hover {
+    color: #fed136;
+}
+@media (min-width: 992px) {
+    #elections-menu {
+        background-color: rgba(13, 15, 16, 0.8);
+    }
+    #elections-menu .dropdown-item {
+        background-color: rgba(13, 15, 16, 0.8);
+        padding: 0.3rem 0.6rem;
+    }
+}
+.nav-link .dropdown-toggle {
+    outline: none;
+}
+.gov-member {
+    width: fit-content;
+}
+
+/* Add responsive CSS here */
+@media(max-width: 400px) {
+    .portfolio-modal .modal-content h2 {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+}
+@media(max-width: 575px) {
+    #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+        font-size: 0.7rem;
+    }
+    #home-big-button {
+        font-size: 1rem;
+    }
+}
+@media(min-width: 401px) {
+    .portfolio-modal .modal-content h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+}
+@media (min-width: 576px) {
+    #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+        font-size: 0.85rem;
+    }
+    .portfolio-modal .modal-content {
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+    }
+}
+@media (min-width: 768px) {
+    #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+        font-size: 0.8rem;
+    }
+}
+@media (min-width: 992px) {
+    #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+        font-size: 0.8rem;
+    }
+}
+@media(min-width: 1050px) {
+    #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+        font-size: 0.8rem;
+    }
+}
+@media (min-width: 1200px) {
+    #home-big-button {
+        font-size: 1.3rem;
+    }
+    #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+        font-size: 1rem;
+    }
+}
+
+.accordion {
+    max-width: 800px;
+	padding: 20px;
+    margin: 0 auto;
+}
+
+.accordion-trigger {
+	display: block;
+    padding: 12px 25px;
+    background: #73001D;
+    border-radius: 35px;
+    border-bottom: 0;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+	text-align:left;
+}
+.accordion-trigger:after {
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -4px;
+}
+.accordion-container {
+	transition: all 0.3s ease-in-out;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 6px;
+    color: #e3e2e2;
+}
+.accordion-container p {
+	margin:20px;
+}
+.accordion-hide {
+	opacity: 0;
+	position: absolute;
+}
+.accordion-hide:checked + .accordion-container {
+	height: auto;
+}
