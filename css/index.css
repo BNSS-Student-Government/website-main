@@ -27,7 +27,7 @@
 #elections-menu {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 0.95rem;
-    background-color: #0d0f10;
+    background-color: transparent;
     letter-spacing: 0.0625em;
     padding: 0;
     margin: 0;
@@ -47,12 +47,16 @@
 }
 @media (min-width: 992px) {
     #elections-menu {
-        background-color: rgba(13, 15, 16, 0.8);
+        /*background-color: rgba(13, 15, 16, 1);*/
+        /*padding: 0.3rem 0;*/
     }
     #elections-menu .dropdown-item {
-        background-color: rgba(13, 15, 16, 0.8);
+        background-color: rgba(13, 15, 16, 0.9);
         padding: 0.3rem 0.6rem;
     }
+    /*#elections-menu .dropdown-item:hover {*/
+    /*    background-color: rgba(13, 15, 16, 0.9);*/
+    /*}*/
 }
 .nav-link .dropdown-toggle {
     outline: none;
@@ -155,5 +159,18 @@
 	position: absolute;
 }
 .accordion-hide:checked + .accordion-container {
-	height: auto;
+    height: auto; /*auto breaks transition but resolves mobile view issue*/
+}
+
+/* Make campaign page content scale better for narrow screens */
+@media(max-width: 575px) {
+    .watch-campaign {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        line-height: 1.25;
+        border-radius: 2rem;
+    }
+    .page-section h2.section-heading {
+        font-size: 2rem;
+    }
 }
